@@ -1,0 +1,38 @@
+{
+  "verifiedAt": "2026-10-18T20:42:22.450Z",
+  "browser": "Ego",
+  "tools": [
+    "ego_browser_help",
+    "ego_browser_run",
+    "ego_browser_screenshot"
+  ],
+  "checks": [
+    "MCP initialize/listTools",
+    "真实 Ego 页面打开",
+    "真实 Ego 填写输入框",
+    "真实 Ego 按钮点击与结果快照",
+    "MCP PNG 截图返回",
+    "同一任务空间 9 完成清理"
+  ],
+  "noChromeFallback": true,
+  "persistedEnabledState": {
+    "chrome-devtools": 0,
+    "aionui-browser": 0,
+    "aionui-image-generation": 0,
+    "agent-blueprint-2": 1,
+    "chaichai": 1,
+    "ego-browser": 1
+  },
+  "workbenchVerification": {
+    "nativeMcpTest": "连接测试成功，3 个工具",
+    "afterRestart": "Ego 启用；两个旧浏览器停用",
+    "newConversation": "Ego 已勾选，蓝图原有 MCP 保留",
+    "tests": {
+      "app": 23,
+      "adapter": 6
+    },
+    "typecheck": "passed",
+    "i18n": "passed",
+    "productionBuild": "passed"
+  }
+}

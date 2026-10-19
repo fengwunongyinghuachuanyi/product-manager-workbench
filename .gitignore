@@ -1,0 +1,24 @@
+.DS_Store
+node_modules/
+target/
+.env
+.env.*
+!.env.example
+*.log
+
+# Personal publication exclusions
+.local-install/
+node_modules/
+runtime/
+runs/
+verification/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+!.env.template
+*.db
+*.log
+.DS_Store
+.build/

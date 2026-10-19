@@ -1,0 +1,90 @@
+{
+  "name": "codex-deepseek-pet",
+  "version": "3.1.0-preview.10",
+  "description": "大肥鱼：聪明贪吃、有分寸的桌面伙伴",
+  "main": "src/main/main.cjs",
+  "author": "YunYueSama",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "check": "node scripts/check.cjs",
+    "icon": "node scripts/build-icon.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "test:electron": "node scripts/smoke-electron.cjs",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win nsis portable",
+    "assets:build": "node scripts/build-hq.cjs && node scripts/build-brand.cjs && node scripts/build-assets.cjs && node scripts/build-motion-flow.cjs && node scripts/build-showcase.cjs",
+    "assets:brand": "node scripts/build-brand.cjs && node scripts/build-assets.cjs",
+    "assets:stories": "node scripts/build-stories.cjs && node scripts/build-stories-v2.cjs",
+    "assets:idle": "node scripts/build-idle-hq.cjs",
+    "assets:flow": "node scripts/build-motion-flow.cjs",
+    "assets:fonts": "node scripts/build-fonts.cjs",
+    "test:integration": "node scripts/integration.cjs"
+  },
+  "build": {
+    "appId": "com.yunyuesama.codexpet",
+    "productName": "codex-deepseek-pet",
+    "asar": true,
+    "npmRebuild": false,
+    "directories": {
+      "output": "artifacts",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "assets/whale/**/*",
+      "assets/fonts/**/*",
+      "build/icon.png",
+      "codex-deepseek-pet/**/*",
+      "package.json",
+      "LICENSE",
+      "ASSET_LICENSE.md"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "codex-deepseek-pet-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "codex-deepseek-pet"
+    },
+    "portable": {
+      "artifactName": "Whale-Companion-${version}-portable.exe"
+    },
+    "asarUnpack": [
+      "src/main/foreground.ps1",
+      "src/main/window-probe.cs"
+    ]
+  },
+  "devDependencies": {
+    "@fontsource/noto-serif-sc": "^5.3.0",
+    "electron": "43.1.0",
+    "electron-builder": "26.6.0",
+    "png-to-ico": "3.0.2",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.35.4"
+  }
+}

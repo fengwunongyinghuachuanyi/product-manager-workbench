@@ -1,0 +1,14 @@
+{
+  "name": "Agent 蓝图 2.0",
+  "description": "内置 Python 蓝图引擎，复用已登录 ChatGPT 账号进行云端推导、审稿与续跑。",
+  "engine": "Codex CLI",
+  "model": "gpt-6.1-sol",
+  "mcp": "agent-blueprint-2",
+  "rules_file": "assistant.md",
+  "suggested_prompts": [
+    "用 Agent 蓝图 2.0 分析我的点子并运行正向引擎生成方案。",
+    "逆向分析我指定的项目目录，生成差距报告，先不要修改代码。",
+    "查询蓝图任务进度，展示阶段、审稿结果与成果路径。"
+  ],
+  "note": "恢复配方，按本机实际 Agent/MCP ID 在界面重新绑定，不直接覆盖数据库。"
+}

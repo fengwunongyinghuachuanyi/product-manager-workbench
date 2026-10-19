@@ -1,0 +1,12 @@
+{
+  "verified_imports": 97,
+  "all_imported_files_match_chinese_manifest": true,
+  "original_codex_sources_unchanged": true,
+  "all_descriptions_chinese": true,
+  "gui_my_skills_count": 97,
+  "gui_official_skills_count": 27,
+  "gui_chinese_search": "地图 -> visualize / remotion-maps",
+  "gui_detail_chinese": "remotion-maps",
+  "official_translation_tests_passed": 74,
+  "import_status": "97 imported, 0 missing; same 97 updated to Chinese"
+}

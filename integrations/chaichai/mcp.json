@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "chaichai": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/chaichai/engine/scripts/rea.mjs",
+        "mcp"
+      ],
+      "env": {
+        "REA_MCP_INPUT_SCHEMA_PROFILE": "compact"
+      }
+    }
+  }
+}

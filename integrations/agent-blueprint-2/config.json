@@ -1,0 +1,9 @@
+{
+  "codex": "codex",
+  "model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "proxy": "",
+  "stage_timeout_seconds": 600,
+  "max_calls": 16,
+  "max_tokens": 400000
+}

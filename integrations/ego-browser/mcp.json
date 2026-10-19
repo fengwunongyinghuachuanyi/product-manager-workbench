@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ego-browser": {
+      "description": "Ego 浏览器：工作台唯一浏览器，支持网页访问、点击、填写、读取、下载和截图；不会回退 Chrome。",
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/product-manager-workbench/integrations/ego-browser/server.mjs"
+      ]
+    }
+  }
+}

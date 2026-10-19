@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "agent-blueprint-2": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/agent-blueprint-2.0/server.mjs"
+      ]
+    }
+  }
+}

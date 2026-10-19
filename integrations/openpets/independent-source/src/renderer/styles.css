@@ -1,0 +1,9 @@
+@import url('fonts.css');
+:root { font-family: 'Noto Serif SC','思源宋体',serif; color:#263555; }
+* { box-sizing:border-box; }
+body { margin:0; overflow:hidden; background:transparent; user-select:none; }
+#pet-root { width:100vw; height:100vh; position:relative; }
+#pet { position:absolute; width:100vw; height:100vw; left:50%; transform:translateX(-50%); bottom:2.666667vw; cursor:grab; outline:none; }
+#pet:focus-visible { outline:2px dashed #6386bd; outline-offset:-20px; border-radius:48%; }
+#bubble { position:absolute; top:8px; left:5%; width:90%; padding:9px 12px; border:1px solid #c6d5ed; background:#fff; border-radius:16px 16px 16px 4px; color:#243450; font-size:15px; line-height:1.7; font-weight:400; text-align:center; box-shadow:0 3px 14px #25385812; opacity:0; transition:opacity .2s; pointer-events:none; }
+#bubble.visible { opacity:1; }

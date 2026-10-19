@@ -1,0 +1,1300 @@
+{
+  "count": 97,
+  "skills": [
+    {
+      "original_name": "user-expression",
+      "workbench_name": "user-expression",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 3,
+      "description_zh": "按用户平时说话的用词和想事情的顺序整理口述、改写文字或代拟观点。用于“按我的说话方式写”“整理我的口述”“用我的表述方法”，以及结合用户自己的表达要求“用词别那么 AI”“换成我能看懂的话”等请求；不因普通中文问答自动模仿用户，也不将历史任务指令当作当前授权。",
+      "description_localized": true
+    },
+    {
+      "original_name": "daily-ai-news",
+      "workbench_name": "daily-ai-news",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 5,
+      "description_zh": "检索、核验、去重并整理最近一天或指定日期范围内的全球 AI 行业新闻，并默认从本次已核实新闻中提炼可快速 Vibe Coding 的高价值或相对新颖小功能；覆盖模型与产品、算力、投融资、政策及 AI 与金融交叉动态，输出带原始来源、重要性排序、影响分析、功能编号和输入输出闭环的中文联合日报。用于每日 AI 新闻、今日 AI 热点、AI 早报/晚报、AI 金融新闻，或用户希望同时获得新闻与小功能候选的场景；除非用户明确说“开始回看”，不得关联历史新闻或历史功能卡。",
+      "description_localized": true
+    },
+    {
+      "original_name": "find-vibe-ideas-from-ai-news",
+      "workbench_name": "find-vibe-ideas-from-ai-news",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 6,
+      "description_zh": "分析 daily-ai-news 生成的联合日报、新闻 Markdown 或当前对话中的已核实 AI 新闻，筛选有实际价值或相对新颖且能快速 Vibe Coding 的小功能并保存历史功能卡；承接新闻日报中 `VC-...` 候选的用户选择，澄清关键约束并生成可直接开发的 MVP 需求文档；仅当用户明确说“开始回看”时，回看历史新闻和功能卡，找出可组合为完整 AI 产品的功能。用于单独寻找产品机会、选择日报候选、生成开发 PRD 或执行显式历史回看。",
+      "description_localized": true
+    },
+    {
+      "original_name": "feishu-document-authoring",
+      "workbench_name": "feishu-document-authoring",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [
+        "Ego 浏览器及 ego-browser CLI"
+      ],
+      "files": 9,
+      "description_zh": "将想法、资料或已确认正文编写为完整的飞书方案、报告与协作文档，设计适合内容的原生图表和排版，并按请求创建或编辑飞书云文档。适用于飞书文档策划、写作、视觉优化和局部修订；不用于仅操作电子表格、幻灯片或多维表格。",
+      "description_localized": true
+    },
+    {
+      "original_name": "browser-product-teardown",
+      "workbench_name": "browser-product-teardown",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 4,
+      "description_zh": "在浏览器中实际体验或观察产品，根据可见页面和用户流程分析功能覆盖、用户旅程、智能体输入输出、工具、上下文及分层架构。适合产品体验、测试与逆向拆解；结论以实际证据为限，不推测隐藏推理或专有提示词。",
+      "description_localized": true
+    },
+    {
+      "original_name": "skill-creator",
+      "workbench_name": "codex-skill-creator",
+      "source": "[local path]",
+      "kind": "system",
+      "dependency_notes": [],
+      "files": 10,
+      "description_zh": "创建或更新 Codex 技能，编写职责清晰、适用范围明确的使用说明，并补充必要的脚本、参考资料与资源。",
+      "description_localized": true
+    },
+    {
+      "original_name": "skill-installer",
+      "workbench_name": "skill-installer",
+      "source": "[local path]",
+      "kind": "system",
+      "dependency_notes": [],
+      "files": 8,
+      "description_zh": "从精选技能目录或 GitHub 仓库安装 Codex 技能到本机技能目录。支持查看可安装技能，以及从公开或私有仓库安装指定技能。",
+      "description_localized": true
+    },
+    {
+      "original_name": "openai-docs",
+      "workbench_name": "openai-docs",
+      "source": "[local path]",
+      "kind": "system",
+      "dependency_notes": [],
+      "files": 17,
+      "description_zh": "查询和核实 OpenAI 官方文档，解答 Codex 的模型、价格、设置、技能、自动化、安装与排障问题，以及 OpenAI API、ChatGPT Work 和相关产品的使用问题。也适用于模型选择、迁移、提示词、智能体、实时接口与评测；普通软件任务仅提到 Codex 时不触发。",
+      "description_localized": true
+    },
+    {
+      "original_name": "imagegen",
+      "workbench_name": "imagegen",
+      "source": "[local path]",
+      "kind": "system",
+      "dependency_notes": [],
+      "files": 12,
+      "description_zh": "生成或编辑图片，包括照片、插画、纹理、精灵图、原型图和透明背景素材。适合根据描述创作新图、修改现有图片或生成参考图的变体；已有矢量图、图标系统或代码绘图优先采用对应编辑方式。",
+      "description_localized": true
+    },
+    {
+      "original_name": "create-grid-editorial-html",
+      "workbench_name": "create-grid-editorial-html",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [
+        "Ego 浏览器及 ego-browser CLI"
+      ],
+      "files": 13,
+      "description_zh": "将内容制作成白底细网格、黑色主视觉、绿色信号点缀的编辑式 HTML，组合大标题、截图批注、对比、表格、机制图和可控动效。用于用户要求参考 career-interview 页面风格、网格编辑式演示或同风格长文时；支持翻页演示与连续阅读。",
+      "description_localized": true
+    },
+    {
+      "original_name": "interactive-flow-diagram",
+      "workbench_name": "interactive-flow-diagram",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 1,
+      "description_zh": "在对话中制作或修改可交互的流程图、用户旅程、智能体执行循环、编排图和过程图，支持点击节点查看详情。按要求保留 Mermaid、静态图、幻灯片或报告格式；独立技术图及导出场景优先采用 Archify。",
+      "description_localized": true
+    },
+    {
+      "original_name": "create-reference-style-html",
+      "workbench_name": "create-reference-style-html",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 8,
+      "description_zh": "创建或重新设计独立的 HTML 报告、产品需求文档、研究文档、文章、静态页面和演示稿。先组织内容，再确定视觉方向，兼顾阅读层级、响应式布局和浏览器检查；普通应用界面修改、视频或专用图表采用各自流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "deck",
+      "workbench_name": "deck",
+      "source": "[local path]",
+      "kind": "personal",
+      "dependency_notes": [],
+      "files": 18,
+      "description_zh": "创建或优化 PowerPoint 演示文稿，先选择视觉方案，再通过演示文稿构建工具制作，并检查运行环境和渲染结果。适合制作 PPT、润色页面和调整版式；界面规格或分镜需求转交对应技能。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-mail",
+      "workbench_name": "lark-mail",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 36,
+      "description_zh": "管理飞书邮箱：起草、发送、回复和转发邮件，搜索与阅读邮件，管理草稿、文件夹、标签、联系人和收信规则，并监听新邮件。仅用于邮件任务；文档、表格、日历、身份授权和即时消息由对应技能处理。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-minutes",
+      "workbench_name": "lark-minutes",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "仅当用户或上游配置显式指定 lark-minutes 时使用，相关请求统一交由 lark-meeting 技能处理。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-openapi-explorer",
+      "workbench_name": "lark-openapi-explorer",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-skill-maker",
+      "workbench_name": "lark-skill-maker",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "创建 lark-cli 的自定义 Skill。当用户需要把飞书 API 操作封装成可复用的 Skill（包装原子 API 或编排多步流程）时使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-calendar",
+      "workbench_name": "lark-calendar",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 15,
+      "description_zh": "飞书日历：管理日历日程和会议室。查看/搜索日程、创建/更新日程、管理参会人、查询忙闲和推荐时段、预定会议室。当用户需要查看日程安排、创建/修改会议、查询/预定会议室时使用。不负责：查询过去的视频会议记录（走 lark-meeting）、待办任务（走 lark-task）。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-workflow-standup-report",
+      "workbench_name": "lark-workflow-standup-report",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-wiki",
+      "workbench_name": "lark-wiki",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 14,
+      "description_zh": "飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。当用户给出 doubao.com 的 /wiki/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：上传文件到知识库节点下（走 lark-drive）、编辑文档/表格/Base 内容（走 lark-doc / lark-sheets / lark-base）。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-markdown",
+      "workbench_name": "lark-markdown",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 6,
+      "description_zh": "飞书 Markdown：查看、创建、上传、编辑和比较飞书中的原生 Markdown 文件。当用户要操作飞书 Markdown 文件，或比较其远端版本及本地草稿时使用。纯本地 Markdown 文件操作不触发本 skill。不负责将 Markdown 导入为飞书在线文档，也不负责文件搜索、权限、评论、移动、删除等云空间管理操作。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-note",
+      "workbench_name": "lark-note",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "仅当用户或上游配置显式指定 lark-note 时使用，相关请求统一交由 lark-meeting 技能处理。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-okr",
+      "workbench_name": "lark-okr",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 26,
+      "description_zh": "飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-doc",
+      "workbench_name": "lark-doc",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 44,
+      "description_zh": "飞书云文档（Docx / Wiki）内容操作：读取、创建、编辑文档，插入或下载图片附件，以及操作思维笔记。用户提供文档 URL/token（包括 doubao.com 的 /docx/、/wiki/）时使用；按 URL 路径/token 而非域名路由。文档内嵌资源按读取参考中的统一规则分流。独立评论操作走 lark-drive；随正文读取评论使用 docs +fetch。表格或 Base 内部数据操作不在本 skill。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-contact",
+      "workbench_name": "lark-contact",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 4,
+      "description_zh": "飞书 / Lark 通讯录:按姓名 / 邮箱解析成 open_id,或按 open_id 反查姓名 / 部门 / 邮箱 / 联系方式 / 个人状态 / 签名,以及按关键词搜索当前用户可见的机器人 / 智能体(agent)。当用户提到一个名字要下一步发消息 / 排日程,或拿到 open_id 想查具体信息时使用。不负责部门树遍历、按部门列员工、组织架构图,这类需求走原生 OpenAPI。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-vc-agent",
+      "workbench_name": "lark-vc-agent",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "仅当用户或上游配置显式指定 lark-vc-agent 时使用，相关请求统一交由 lark-meeting 技能处理。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-vc",
+      "workbench_name": "lark-vc",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "仅当用户或上游配置显式指定 lark-vc 时使用，相关请求统一交由 lark-meeting 技能处理。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-drive",
+      "workbench_name": "lark-drive",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 61,
+      "description_zh": "飞书云空间（云盘/云存储）：管理 Drive 文件和文件夹，包含上传/下载、创建文件夹、复制/移动/删除、查看元数据、查询权限设置、评论/权限/订阅、标题、版本、飞书文档密级标签（secure labels）和本地文件导入。用户需要整理云盘目录、处理云空间资源 URL/token、判断链接类型/真实 token/标题，或导入 Word/Markdown/Excel/CSV/PPTX/.base 为 docx/sheet/bitable/slides 时使用；doubao.com 云空间 URL/token 也按资源路径和 token 路由，不回退 WebFetch。不负责：文档内容编辑（走 lark-doc）、表格/Base 表内数据操作（走 lark-sheets/lark-base）、知识空间节点/成员管理（走 lark-wiki）、原生 Markdown 文件读写/patch/diff（走 lark-markdown）。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-workflow-meeting-summary",
+      "workbench_name": "lark-workflow-meeting-summary",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "会议纪要整理工作流：汇总指定时间范围内的会议纪要并生成结构化报告。当用户需要整理会议纪要、生成会议周报、回顾一段时间内的会议内容时使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-event",
+      "workbench_name": "lark-event",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 8,
+      "description_zh": "监听和订阅飞书实时事件，以逐条 JSON 数据流接收消息、表情回应、群聊变更、审批状态、任务、会议和画板更新。适合机器人和持续运行的事件处理程序，支持限制事件数量与运行时长。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-apps",
+      "workbench_name": "lark-apps",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 56,
+      "description_zh": "妙搭（Spark/Miaoda）应用开发与托管：应用创建、本地全栈开发、云端生成迭代、创意设计（UI mockup / 可交互原型 / 线框图 / 落地页 / 仪表盘 / 幻灯片 deck / 视觉探索）、AI相关能力和飞书平台能力或者其他外部能力集成、日志/Trace/监控指标/PV/UV 查询、环境变量管理、应用协作者与协作权限设置、应用角色与成员管理、自动化触发器（定时/记录变更/Webhook/飞书审批）。当用户要开发/新建一个系统·工具·平台·应用，或要本地开发 / 云端开发 / 修改 / 部署 / 发布 / 上线 / 拿可分享链接，或用 HTML 做页面·网站·部署到妙搭，或要设计 / design / mockup / prototype / wireframe / 做 PPT / deck / 视觉探索，或提到妙搭/Spark/Miaoda（应用运行时域名形如 *.aiforce.cloud）、应用数据库、应用文件存储、开放 API Key、可见范围、应用协作者/开发权限、应用角色/角色成员、线上日志、接口请求量、错误量、延迟、访问量、环境变量、给妙搭应用配自动化任务/定时触发/审批通过后自动触发时使用。不负责普通云盘文件上传（lark-drive）、飞书文档编辑（lark-doc）、原生幻灯片创建（lark-slides）。",
+      "description_localized": true
+    },
+    {
+      "original_name": "vidmuse",
+      "workbench_name": "vidmuse",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "HyperFrames 运行环境",
+        "VidMuse CLI 与账号"
+      ],
+      "files": 2,
+      "description_zh": "使用 VidMuse 管理项目、账号状态、订阅额度、模型、生成或上传的素材、风格库、声音库、生成参数、对话和长期记忆。需要时安装并使用 VidMuse 命令行工具。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-attendance",
+      "workbench_name": "lark-attendance",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 1,
+      "description_zh": "飞书考勤打卡：查询自己的考勤打卡记录",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-shared",
+      "workbench_name": "lark-shared",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 7,
+      "description_zh": "配置飞书命令行工具及身份授权，处理登录、退出、登录状态、用户与机器人身份、业务域权限、缺失授权范围、撤销授权和授权提示。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-base",
+      "workbench_name": "lark-base",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 27,
+      "description_zh": "飞书多维表格（Base）操作：建表、字段、记录、视图、统计、公式/lookup、表单、仪表盘、应用模式（BaseApp/AppMode 页面与组件）、Workspace 目录、workflow、角色权限、模板中心（多维表格模板分类/列表/搜索）；遇到 Base/多维表格/bitable、BaseApp/AppMode、/base/ 或 /app/ 链接时使用。BaseApp 不走 lark-apps；文件导入/导出转 lark-drive，认证/授权转 lark-shared。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-slides",
+      "workbench_name": "lark-slides",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 50,
+      "description_zh": "飞书幻灯片：创建和编辑幻灯片。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。当用户给出 doubao.com 的 /slides/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：云文档内容编辑（走 lark-doc）、云文档里的独立画板对象（走 lark-whiteboard）、上传或下载普通文件（走 lark-drive）。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-im",
+      "workbench_name": "lark-im",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 61,
+      "description_zh": "飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件、管理表情回复、发送应用内/短信/电话加急、发送和处理交互卡片（Interactive Card）、监听卡片按钮回调（card.action.trigger）。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据、管理 Feed 置顶（添加/移除/查询置顶会话）、管理标签数据、处理卡片回调时使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-sheets",
+      "workbench_name": "lark-sheets",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 30,
+      "description_zh": "飞书电子表格：创建和操作电子表格。支持工作表与行列结构（增删/合并/尺寸/隐藏/冻结/分组）、单元格读写（值/公式/样式/批注/单元格图片）、区域复制移动排序填充、查找替换、批量更新，图表、透视表、条件格式、筛选器与筛选视图、下拉列表、迷你图、浮动图片等对象的创建与维护，以及公式校验、历史版本回滚、本地 Excel/CSV 与飞书表格的导入导出。当用户需要创建或编辑表格、统计汇总与可视化、表格美化、公式计算（含 Excel 公式迁移）、金融/财务建模（DCF、三张表、预算、Sensitivity 等）时使用。多维表格（Base/bitable）请改用 lark-base；若用户是想按名称或关键词搜索云空间（云盘/云存储）里的表格文件，请改用 lark-drive 的 drive +search 先定位资源。当用户给出 doubao.com 的 /sheets/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-task",
+      "workbench_name": "lark-task",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 18,
+      "description_zh": "飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-whiteboard",
+      "workbench_name": "lark-whiteboard",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 31,
+      "description_zh": "飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用多种格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板时使用此 skill。不负责：飞书云文档内容编辑（lark-doc）、文档内嵌电子表格/Base（lark-sheets / lark-base）。\n",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-approval",
+      "workbench_name": "lark-approval",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 17,
+      "description_zh": "飞书审批：查询和处理审批待办/已办/实例，搜索可发起审批定义、查看定义详情并发起原生审批实例。当用户要处理审批任务、查看审批实例、搜索或发起审批时使用。审批待办不是飞书任务；非审批类待办走 lark-task。不负责创建审批定义；三方审批定义不走原生提单。",
+      "description_localized": true
+    },
+    {
+      "original_name": "lark-meeting",
+      "workbench_name": "lark-meeting",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "飞书 lark-cli 与登录授权"
+      ],
+      "files": 30,
+      "description_zh": "飞书视频会议：查询会议记录与会议产物(纪要/逐字稿/妙记)、妙记搜索/上传/下载/编辑、机器人参与会议；查询进行中的会议、实时会议内容(发言/聊天/共享文档)问答(会上/会里)、发送会中聊天/表情；基于 meeting_id、meeting_no、event_id、note_id、minute_token、vc-node-id 或妙记 URL 查询相关信息。预约会议、忙闲和会议室管理走 lark-calendar。",
+      "description_localized": true
+    },
+    {
+      "original_name": "hyperframes",
+      "workbench_name": "hyperframes",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "HyperFrames 运行环境",
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 40,
+      "description_zh": "使用 HyperFrames 和 HTML 制作视频、动画、标题卡、叠加层、字幕、配音、音频响应视觉和场景转场。支持字幕同步、文字高亮、节拍驱动动效及视频制作流程；命令行初始化、预览、渲染和排障使用配套工具技能。",
+      "description_localized": true
+    },
+    {
+      "original_name": "website-to-hyperframes",
+      "workbench_name": "website-to-hyperframes",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "HyperFrames 运行环境",
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 10,
+      "description_zh": "抓取指定网站的可见内容并制作成 HyperFrames 视频，适合网站宣传片、产品导览、社交广告和页面演示。用于把网页、网站链接或产品页面转换为视频的请求。",
+      "description_localized": true
+    },
+    {
+      "original_name": "hyperframes-cli",
+      "workbench_name": "hyperframes-cli",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "HyperFrames 运行环境",
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "使用 HyperFrames 命令行工具初始化项目、检查代码与布局、打开预览工作室、渲染视频、转录字幕、生成配音、诊断环境、升级组件和运行性能测试。",
+      "description_localized": true
+    },
+    {
+      "original_name": "hyperframes-registry",
+      "workbench_name": "hyperframes-registry",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "HyperFrames 运行环境",
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 9,
+      "description_zh": "从 HyperFrames 组件库安装并接入可复用的模块和组件，处理组件发现、安装目录、子视频片段连接、代码片段合并和项目配置。",
+      "description_localized": true
+    },
+    {
+      "original_name": "gsap",
+      "workbench_name": "gsap",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 4,
+      "description_zh": "为 HyperFrames 视频编写 GSAP 动画，提供动画起止状态、缓动、错峰播放、时间轴、嵌套与回放等参考，并指导位移变换和性能优化。",
+      "description_localized": true
+    },
+    {
+      "original_name": "design-kpis",
+      "workbench_name": "design-kpis",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "为产品或业务决策设计关键绩效指标体系，明确指标定义、目标、业务驱动因素、约束指标和测量方案，适合建立或改进成功标准与效果评估方式。",
+      "description_localized": true
+    },
+    {
+      "original_name": "validate-data",
+      "workbench_name": "validate-data",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "检查分析结论是否准确、有充分证据支撑，并适合分享或用于决策。覆盖方法、计算、对比、图表、限制条件和结论的核验。",
+      "description_localized": true
+    },
+    {
+      "original_name": "product-business-analysis",
+      "workbench_name": "product-business-analysis",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "分析产品或业务数据，为方向选择、机会排序、变更评估、用户分群、取舍和下一步决策提供指标与证据支持。",
+      "description_localized": true
+    },
+    {
+      "original_name": "build-dashboard",
+      "workbench_name": "build-dashboard",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 6,
+      "description_zh": "制作有数据来源支撑的仪表盘、评分卡和监控视图，用于跟踪表现、分析变化原因或推动产品与业务行动。明确指标、筛选条件、来源定义和质量检查。",
+      "description_localized": true
+    },
+    {
+      "original_name": "gather-business-context",
+      "workbench_name": "gather-business-context",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "从已连接或用户提供的资料中收集业务背景，先弄清指标含义、近期变化和应核对的数据来源，再开展分析。若请求还包含诊断、建议或交付物，会继续进入对应分析流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "analyze-data-quality",
+      "workbench_name": "analyze-data-quality",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "评估结构化数据、查询结果、仪表盘及分析证据是否可靠，检查数据质量，核对冲突来源与指标口径，并判断证据是否适合引用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "metric-diagnostics",
+      "workbench_name": "metric-diagnostics",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "诊断指标为什么发生变化或偏离预期，识别可能的驱动因素、异常来源、差距及不同统计结果之间的原因。",
+      "description_localized": true
+    },
+    {
+      "original_name": "publish-artifact-to-sites",
+      "workbench_name": "publish-artifact-to-sites",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 1,
+      "description_zh": "通过 Sites 发布已验证的数据分析报告或仪表盘。在已确认的工作模式且发布工具齐备时按流程发布；在普通桌面环境中，只有用户明确要求或同意分享后才发布。",
+      "description_localized": true
+    },
+    {
+      "original_name": "create-data-context",
+      "workbench_name": "create-data-context",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 13,
+      "description_zh": "创建、更新、检查或修复数据分析语义层，把数据结构、指标含义和业务口径保存为后续分析可读取、核对和引用的数据背景。",
+      "description_localized": true
+    },
+    {
+      "original_name": "visualize-data",
+      "workbench_name": "visualize-data",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 3,
+      "description_zh": "设计、制作、修改和检查定量数据图表，适用于对话、报告、仪表盘、笔记本和独立分析成果中的可视化表达。",
+      "description_localized": true
+    },
+    {
+      "original_name": "build-report",
+      "workbench_name": "build-report",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 31,
+      "description_zh": "为管理层、产品、业务或技术受众制作正式分析报告，以明确结论为主线，配合证据、图表、表格、限制条件和来源说明。",
+      "description_localized": true
+    },
+    {
+      "original_name": "jupyter-notebooks",
+      "workbench_name": "jupyter-notebooks",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "创建、编辑或验证可复现的 SQL 和 Python 笔记本，适合数据探索、计算草稿、分析过程留痕，以及需要重跑或复核的配套分析文件。",
+      "description_localized": true
+    },
+    {
+      "original_name": "index",
+      "workbench_name": "index",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "作为数据分析技能的总入口，根据任务选择合适的流程。适用于数据、指标、仪表盘、报告、图表、笔记本、表格、关键绩效指标、市场规模及语义层相关请求。",
+      "description_localized": true
+    },
+    {
+      "original_name": "market-sizing",
+      "workbench_name": "market-sizing",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "估算市场、细分领域或商业机会的规模，明确计算方法、假设和不确定性。支持总市场、可服务市场和可获取市场的估算，以及不同机会或情景的比较。",
+      "description_localized": true
+    },
+    {
+      "original_name": "kpi-reporting",
+      "workbench_name": "kpi-reporting",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 3,
+      "description_zh": "编制关键绩效指标汇报、评分卡、周度、月度或季度经营复盘和管理层摘要，说明当前表现、目标差距、已验证的变化原因及业务影响。",
+      "description_localized": true
+    },
+    {
+      "original_name": "plugin-management",
+      "workbench_name": "plugin-management",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 1,
+      "description_zh": "发现和推荐适合任务的插件，检查应用权限与依赖，管理插件连接或移除。适用于插件管理，以及需要接入现有工具无法访问的外部应用、账号、服务或数据源的任务。",
+      "description_localized": true
+    },
+    {
+      "original_name": "sites",
+      "workbench_name": "sites",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 136,
+      "description_zh": "使用 Sites 创建、修改和发布网站，并管理托管。适合落地页、作品集、仪表盘、门户、追踪工具、内容中心、游戏、活动报名页和内部工具等网站项目。",
+      "description_localized": true
+    },
+    {
+      "original_name": "write-like-me",
+      "workbench_name": "write-like-me",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 1,
+      "description_zh": "在代写文档、邮件、报告、方案、演示文稿或消息时，参考用户自己的表达习惯，让内容符合用户的写作风格。小幅修改或用户明确不希望模仿风格时不使用。",
+      "description_localized": true
+    },
+    {
+      "original_name": "update-pet",
+      "workbench_name": "update-pet",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "检查、验证、预览、修复或更新 ChatGPT Work 中的自定义动画宠物，包括名称、介绍和精灵图集。仅用于 ChatGPT Pets，不用于现实宠物或其他应用里的桌宠。",
+      "description_localized": true
+    },
+    {
+      "original_name": "pets",
+      "workbench_name": "pets",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "列出、查看、选择、下载或删除 ChatGPT Work 中的动画宠物。仅用于明确的 ChatGPT Pets 场景，不用于现实宠物、普通宠物图片或其他应用中的宠物。",
+      "description_localized": true
+    },
+    {
+      "original_name": "create-pet",
+      "workbench_name": "create-pet",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "ChatGPT Pets 服务",
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 21,
+      "description_zh": "根据角色构思、品牌元素或参考图片，为 ChatGPT Work 创建或修复动画宠物，完成图集验证、预览、上传与启用。支持九种动画状态和十六个观察方向；其他应用的桌宠或单张图片使用对应流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "manage-schedules",
+      "workbench_name": "manage-schedules",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "检查 ChatGPT Space 页面及其计划任务，提出合适的周期性工作建议，并创建、更新或删除已安排的自动任务。",
+      "description_localized": true
+    },
+    {
+      "original_name": "write-page",
+      "workbench_name": "write-page",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 5,
+      "description_zh": "按用户要求创建或编辑 ChatGPT Page 和 Space 内容，并尊重既有格式、保存位置与项目规范。仅选中页面不代表允许写入；明确要求 Markdown 文件时按指定文件格式交付。",
+      "description_localized": true
+    },
+    {
+      "original_name": "maintain-space",
+      "workbench_name": "maintain-space",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "在用户要求维护时，把新证据整合到现有 ChatGPT 页面或空间中，更新内容并协调相关信息。直接改字使用页面编辑流程；只有用户要求时才安排后续定期维护。",
+      "description_localized": true
+    },
+    {
+      "original_name": "organize-space",
+      "workbench_name": "organize-space",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "按用户要求整理现有 ChatGPT 页面与空间结构，调整内容组织关系。普通聊天、草稿、写作建议或仅选中页面时不自动重组；小范围文字修改使用页面编辑流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-maps",
+      "workbench_name": "remotion-maps",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 27,
+      "description_zh": "为 Remotion 视频中的地图动画提供制作知识与实现参考。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-captions",
+      "workbench_name": "remotion-captions",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 6,
+      "description_zh": "为 Remotion 视频转录、显示和制作字幕动画。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-best-practices",
+      "workbench_name": "remotion-best-practices",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 131,
+      "description_zh": "Remotion 技能总入口，根据视频制作任务选择合适的配套流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-create",
+      "workbench_name": "remotion-create",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 5,
+      "description_zh": "创建新的 Remotion 视频项目与视频内容。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-markup",
+      "workbench_name": "remotion-markup",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 61,
+      "description_zh": "指导 Remotion 视频的内容结构、动画和视觉效果实现。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-multimedia",
+      "workbench_name": "remotion-multimedia",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 6,
+      "description_zh": "通过 Mediabunny 处理视频、音频等媒体内容。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-docs",
+      "workbench_name": "remotion-docs",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 3,
+      "description_zh": "检索 Remotion 官方文档，查找实现方法和接口说明。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-render",
+      "workbench_name": "remotion-render",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 4,
+      "description_zh": "渲染并导出 Remotion 视频文件。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-upgrade",
+      "workbench_name": "remotion-upgrade",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 3,
+      "description_zh": "升级 Remotion 及相关软件包，处理版本更新。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-studio",
+      "workbench_name": "remotion-studio",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 3,
+      "description_zh": "在 Remotion Studio 中预览视频及制作效果。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-saas",
+      "workbench_name": "remotion-saas",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 6,
+      "description_zh": "使用 Remotion 构建应用，将视频制作能力接入产品。",
+      "description_localized": true
+    },
+    {
+      "original_name": "remotion-interactivity",
+      "workbench_name": "remotion-interactivity",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 4,
+      "description_zh": "组织 Remotion 的界面与内容结构，支持交互功能。",
+      "description_localized": true
+    },
+    {
+      "original_name": "template-creator",
+      "workbench_name": "template-creator",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 6,
+      "description_zh": "根据参考文档、演示文稿、表格、在线文档、页面、图片或网站项目，创建或更新可复用的个人 Codex 成果模板技能。适合把固定样式沉淀为模板；已有模板的一次性使用不走此流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "Spreadsheets",
+      "workbench_name": "Spreadsheets",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 19,
+      "description_zh": "创建、修改、分析和可视化 Excel、CSV、TSV 或 Google Sheets 表格，支持公式、格式、图表和重新计算。不用于直接控制已打开的 Microsoft Excel 窗口。",
+      "description_localized": true
+    },
+    {
+      "original_name": "excel-live-control",
+      "workbench_name": "excel-live-control",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 13,
+      "description_zh": "通过 ChatGPT 加载项或已连接会话，控制当前打开的 Microsoft Excel 工作簿。适用于用户明确指定 Excel 应用或延续已有实时操作；独立表格文件和 Google Sheets 使用对应流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "pdf",
+      "workbench_name": "codex-pdf",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 5,
+      "description_zh": "读取、创建、检查、渲染和验证 PDF 文件，重点检查视觉布局及可填写表单。使用 Poppler 和 Python 工具完成文字表格提取、生成和页面检查。",
+      "description_localized": true
+    },
+    {
+      "original_name": "Presentations",
+      "workbench_name": "Presentations",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 60,
+      "description_zh": "读取、创建或编辑 PowerPoint 和 Google Slides 演示文稿，适合幻灯片、PPT、PPTX 及在线演示文稿任务。",
+      "description_localized": true
+    },
+    {
+      "original_name": "documents",
+      "workbench_name": "documents",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验",
+        "指定的 MCP/连接器工具"
+      ],
+      "files": 80,
+      "description_zh": "创建、编辑、修订和批注 Word 文档及面向 Google Docs 的文档成果。通过页面渲染和逐页检查核对布局，再交付最终文件。",
+      "description_localized": true
+    },
+    {
+      "original_name": "html",
+      "workbench_name": "html",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 7,
+      "description_zh": "在没有其他专用流程负责时，创建或重做独立的单文件 HTML 成果。根据报告、说明、落地页、演示稿或小工具选择流程；线框图、原型、图表、普通应用修改和视频采用各自流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "product-html-cn",
+      "workbench_name": "product-html-cn",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "将中文产品研究、PRD、竞品分析或项目复盘制作为证据可追溯、决策明确、可在浏览器与打印场景中验收的单文件 HTML 文档。用于产品经理需要从材料得出 Go、Conditional Go 或 No-Go 结论的场景；不用于普通应用前端开发。",
+      "description_localized": true
+    },
+    {
+      "original_name": "archify",
+      "workbench_name": "archify",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 70,
+      "description_zh": "根据实际技术或代码证据，创建可验证的架构图、流程图、时序图、数据流图及状态图，提供可探索的 HTML 查看器、主题和导出。若只需要对话内的简单交互图，采用对应轻量流程。",
+      "description_localized": true
+    },
+    {
+      "original_name": "design-artifact",
+      "workbench_name": "design-artifact",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 2,
+      "description_zh": "为独立 HTML 页面、报告、方案、落地页、演示稿和小工具确定视觉方向，解决配色、字体、构图、主题与整体风格等尚未明确的问题。已确定设计方案或由专用流程负责结构时，不重新设计。",
+      "description_localized": true
+    },
+    {
+      "original_name": "visualize",
+      "workbench_name": "visualize",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 13,
+      "description_zh": "在对话中创建可视化和交互工具，帮助解释机制、比较选项、探索条件变化、展示模拟、地图、图表和原型。正式科学静态图采用标准绘图工具。",
+      "description_localized": true
+    },
+    {
+      "original_name": "computer-history",
+      "workbench_name": "computer-history",
+      "source": "[local path]",
+      "kind": "plugin",
+      "dependency_notes": [
+        "原插件的专用工具与运行环境需逐项核验"
+      ],
+      "files": 1,
+      "description_zh": "读取本机近期活动记录和摘要，回答用户关于最近使用电脑、查看内容或进行操作的问题。",
+      "description_localized": true
+    },
+    {
+      "original_name": "ego-browser",
+      "workbench_name": "ego-browser",
+      "source": "[local path]",
+      "kind": "shared",
+      "dependency_notes": [
+        "Ego 浏览器及 ego-browser CLI"
+      ],
+      "files": 20,
+      "description_zh": "使用 Ego 浏览器打开和操作网站，完成页面阅读、数据提取、表单填写、点击、截图和登录，也适用于网页应用测试、问题排查和质量检查。可使用用户已有的网站登录状态，并遵守浏览器控制权与授权要求。",
+      "description_localized": true
+    }
+  ],
+  "excluded": [
+    {
+      "file": "[local path]",
+      "reason": "internal skill not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "routing wrapper; prefer maintained ego-browser skill"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "cached templates not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "nested supporting workflow, retained with parent skill"
+    },
+    {
+      "file": "[local path]",
+      "reason": "nested supporting workflow, retained with parent skill"
+    },
+    {
+      "file": "[local path]",
+      "reason": "nested supporting workflow, retained with parent skill"
+    },
+    {
+      "file": "[local path]",
+      "reason": "legacy subworkflow not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "legacy subworkflow not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "legacy subworkflow not exposed in this session"
+    },
+    {
+      "file": "[local path]",
+      "reason": "legacy subworkflow not exposed in this session"
+    }
+  ]
+}

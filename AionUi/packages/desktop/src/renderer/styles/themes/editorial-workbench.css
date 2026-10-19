@@ -1,0 +1,130 @@
+/* Career reference: paper, ink, fine rules and a restrained green signal. */
+:root,
+[data-color-scheme='default'] {
+  --editorial-accent: #00e75e;
+  --editorial-accent-ink: #111111;
+  --editorial-grid: rgba(17, 17, 17, 0.035);
+  --editorial-focus-shadow: 0 0 0 3px rgba(0, 231, 94, 0.14);
+  --editorial-focus-border: #008a38;
+  --editorial-primary-rgb: 17, 17, 17;
+  --editorial-primary-hover-rgb: 48, 48, 48;
+  --aou-1: #f7f7f8;
+  --aou-2: #eeeeef;
+  --aou-3: #dedee0;
+  --aou-4: #c5c5c8;
+  --aou-5: #939397;
+  --aou-6: #333333;
+  --aou-7: #252525;
+  --aou-8: #1d1d1d;
+  --aou-9: #171717;
+  --aou-10: #111111;
+  --bg-base: #ffffff;
+  --bg-1: #ffffff;
+  --bg-2: #f7f7f8;
+  --bg-3: #e6e6e6;
+  --bg-hover: #f7f7f8;
+  --bg-active: #eeeeef;
+  --text-primary: #111111;
+  --color-text-1: #111111;
+  --text-secondary: #6b7280;
+  --text-disabled: #a0a0a6;
+  --border-base: #e6e6e6;
+  --border-light: #f0f0f2;
+  --primary: #111111;
+  --brand: #111111;
+  --brand-light: #f7f7f8;
+  --brand-hover: #dedee0;
+  --message-user-bg: #f3f3f4;
+  --message-tips-bg: #f7f7f8;
+  --workspace-btn-bg: #f7f7f8;
+  --thought-gradient: #f7f7f8;
+  --fill: #f7f7f8;
+  --color-guid-agent-bar: #f7f7f8;
+}
+
+[data-color-scheme='default'][data-theme='dark'] {
+  --editorial-grid: rgba(255, 255, 255, 0.04);
+  --editorial-focus-border: #00e75e;
+  --editorial-primary-rgb: 224, 224, 226;
+  --editorial-primary-hover-rgb: 255, 255, 255;
+  --aou-1: #262626;
+  --aou-2: #333333;
+  --aou-3: #444444;
+  --aou-4: #626262;
+  --aou-5: #999999;
+  --aou-6: #c5c5c8;
+  --aou-7: #dedee0;
+  --aou-8: #eeeeef;
+  --aou-9: #f7f7f8;
+  --aou-10: #ffffff;
+  --bg-base: #151515;
+  --bg-1: #151515;
+  --bg-2: #202020;
+  --text-primary: #f7f7f8;
+  --color-text-1: #f7f7f8;
+  --text-secondary: #b7b7bd;
+  --border-base: #363636;
+  --border-light: #292929;
+  --primary: #eeeeef;
+  --brand: #eeeeef;
+  --brand-light: #262626;
+  --brand-hover: #626262;
+  --message-user-bg: #292929;
+  --message-tips-bg: #202020;
+  --thought-gradient: #202020;
+  --color-guid-agent-bar: #262626;
+}
+
+.app-shell .layout-sider {
+  background: var(--bg-base) !important;
+}
+
+.layout-sider-header {
+  min-height: 78px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.layout-sider-header .brand-monogram::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--editorial-accent);
+}
+
+.layout-sider .sider-section-label,
+.layout-sider .sider-action-btn {
+  background-color: var(--bg-base);
+}
+
+.layout-sider .workbench-nav-entry {
+  min-height: 38px;
+  border-radius: 7px;
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.layout-sider .workbench-nav-entry--active {
+  background: var(--text-primary) !important;
+  color: var(--bg-base) !important;
+  box-shadow: inset 3px 0 var(--editorial-accent);
+}
+
+.layout-sider .workbench-nav-entry--active .text-t-primary {
+  color: inherit;
+}
+
+.settings-sider__item-label {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .layout-sider-header {
+    min-height: 56px;
+    margin-bottom: 4px;
+  }
+}

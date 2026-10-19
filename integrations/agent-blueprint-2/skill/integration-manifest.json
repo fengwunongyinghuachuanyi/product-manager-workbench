@@ -1,0 +1,13 @@
+{
+  "config.json": "a58cc7f1e4f55de5e14662ec4486bb669cccef3ceb4c0923014b336a3c32e70a",
+  "bridge.py": "9baf554e6bcd6f9ce519693e4a4b1f399fb6dc51e305878ebfc304d26123393f",
+  "README.md": "6dd6e4f16c7cc924dbb35fd2d49817d0bc9a02576eb92cf3f8796d053e6bab41",
+  "server.mjs": "39ea14be0b0da57ed236705e108c4609d29e2b1baed23ab367e0f3b77eb84bcc",
+  "mcp.json": "9bb7044d4c39a3109c4ac5138feef941f05f2b9417a9893f4f56e37a711e70e7",
+  "skill/source-manifest.json": "f043f680adf2284099bcbcbaba23222d48d3df682b5f4f3c9f204bb4868f6a04",
+  "skill/assistant.json": "6fc1d1be1e2c348bff46e153d5d26dc4fdb00585528dee4ee3b0e051f6f7416d",
+  "skill/validation.md": "9303c521da451ecfefc17a79cbd4dd8f0cbc4fd8bd52bc35d2897023c07e256d",
+  "skill/assistant.md": "d7744ace662ff9f081b2a0c23604cb50cdb7abd3d234573896591aa0d8a8c697",
+  "tests/test_bridge.py": "58c5cd4429e30c594c1547c3af01f752a583c6f8a2c7400471defec8ee8a992d",
+  "tests/mcp-smoke.mjs": "4688d3efeb7e014769adc7e1d58d2f23a76c6c13106b6521c18fb0525841c2d6"
+}

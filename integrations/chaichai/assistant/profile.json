@@ -1,0 +1,11 @@
+{
+  "name": "拆拆",
+  "description": "软件拆解与证据分析助手，复用本机 ChatGPT 登录进行云端解释。",
+  "agent": "Codex CLI",
+  "model": "gpt-6.1-sol",
+  "mcp": "chaichai",
+  "method_reference": "engine/skills/reverse-engineer-anything/SKILL.md",
+  "suggested_prompt": "用拆拆分析我提供的软件或安装包，先给出结构、关键证据和未知项，再解释它怎样工作。",
+  "note": "按本机 Agent/MCP 标识在助手界面恢复，不直接覆盖数据库。",
+  "rules_file": "rules.md"
+}

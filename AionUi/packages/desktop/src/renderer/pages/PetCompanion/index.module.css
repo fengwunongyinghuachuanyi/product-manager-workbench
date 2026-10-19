@@ -1,0 +1,87 @@
+.panel {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  color: var(--text-primary);
+}
+.intro {
+  margin-bottom: 20px;
+}
+.eyebrow {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.intro h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 8px 0;
+}
+.panel p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.section {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-base);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.row span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.row .clock {
+  font-variant-numeric: tabular-nums;
+  font-size: 24px;
+  color: var(--text-primary);
+}
+.board {
+  position: relative;
+  height: 190px;
+  background: var(--fill-0);
+  border: 1px dashed var(--border-base);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+  overflow: hidden;
+}
+.board span {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.board .token {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+}
+@media (max-width: 430px) {
+  .panel {
+    padding: 16px;
+  }
+  .intro h1 {
+    font-size: 24px;
+  }
+}
+
+.actions :global(.arco-input-number) {
+  width: 96px;
+}
