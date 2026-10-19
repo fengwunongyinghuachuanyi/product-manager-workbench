@@ -35,9 +35,3 @@ docs/         修改说明、版权与历史来源
 各助手需要重新导入配置：[蓝图](integrations/agent-blueprint-2/README.md) · [拆拆](integrations/chaichai/README.md) · [Ego](integrations/ego-browser/README.md) · [桌宠](integrations/openpets/README.md)。配置示例的 `/ABSOLUTE/PATH/`、`/PATH/TO/` 等占位需改为实际路径。个人账号、API Key、运行时依赖及聊天记录不随源码发布。普通 API 模型需要自行配置；蓝图适配器复用本机 Codex 登录，在云端推理。
 
 本次发布是源码快照，未制作新的安装包，也未重新执行全量前后端构建。集成时的本机验证记录仅代表当时覆盖的链路，迁移机器后需要重新构建和验证。
-
-## 发布范围与版权
-
-排除密钥、登录数据、任务成果、编译缓存、已下载运行时、个人技能全文、无关 PDF 和历史宣传动图。功能源码、角色资源及许可证保留。完整清单见 `SOURCE-MANIFEST.sha256`。
-
-原项目及第三方贡献的权利归属见 [NOTICE](NOTICE)、[作者记录](docs/AUTHORS.md)、[修改记录](docs/MODIFICATIONS.md) 和各子目录许可证。本仓库是个人工作台版本，不将全部基础能力声明为独立原创。
